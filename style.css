@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.title {
+    color: #f5a623;
+}
+form {
+  display:flex;
+}
+.container {
+    background: #2d2c2c;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 350px;
+    text-align: center;
+}
+
+
+
+.text {
+    flex: 1;
+    margin-left: 15px;
+    margin-right:5px;
+    padding-left: 10px;
+
+}
+
+.text:focus {
+    outline: #f5a623 solid 2px;
+}
+.send,
+.reset {
+    flex: 1;
+    background: #f5a623;
+    color: #2d2c2c;
+    font-weight: bold;
+    border: none;
+    padding: 1px;
+    margin : 0 5px;
+}
+.send:hover , .reset:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s;
+    color:red;
+   font-weight:bold;
+}
+body {
+  animation: example 6s infinite;
+}
+@keyframes example{
+  0%{background: #434343}
+  50% {background: #ff03}
+  100% {background: #434343;} 
+}
+.container input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.container ul,
+.container li {
+    list-style: none;
+    /* 不要點點 */
+    padding: 15px;
+}
+
+.container ul {
+    padding-bottom: 20px;
+}
+
+.container li {
+    color: white;
+    font-weight: 220;
+    border-bottom: #C0C0C0 solid 1px;
+    position: relative;
+}
+
+.container li:nth-of-type(odd) {
+    background: #434343;
+}
+
+/* 奇數變色 */
+
+.container li a {
+    position: absolute;
+    padding: 10px 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    color: #2d2c2c;
+    background: #f5a623;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container li a:hover {
+  color:red;
+  font-weight:bold;
+}
