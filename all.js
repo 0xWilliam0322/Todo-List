@@ -3,7 +3,6 @@ const sendData = document.querySelector('.send');
 const reset = document.querySelector('.reset');
 let txt = document.querySelector ('.text');
 // 每次在頁面讀取時，使用 getItem() 方法從 localStorage 取出資料，並透過 JSON.parse() 方法將資料轉換成陣列。然而第一次在提取資料會取不到資料，因此需要建立一個新的空陣列：
-
 let data = JSON.parse(localStorage.getItem('listData')) || [];
  
 //監聽與更新資料
